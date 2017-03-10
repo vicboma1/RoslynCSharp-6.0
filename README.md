@@ -106,11 +106,12 @@ Now
 ## Expression bodies on property-like function members
 Before 
 ```c#
-
+  public String Alias() { return "vicboma1"; }
 ```
 
 Now
 ```c#
+  public String Alias => "vicboma1";
 ```
 
 
