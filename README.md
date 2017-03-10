@@ -26,6 +26,11 @@
 https://go.microsoft.com/fwlink/?linkid=843444
 ```
 
+5 - Open Visual Studio 2017 for Mac 
+
+
+
+
 ###Indexes for new features for Roslyn compiler
 * [Initializers for auto-properties]()
 * [Getter-only auto-properties]()
