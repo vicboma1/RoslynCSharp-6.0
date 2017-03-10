@@ -117,11 +117,17 @@ Now
 ## Using static
 Before 
 ```c#
+  public void PrintLnAsync(String str) {
+    Task.Factory.StartNew( ()=> Console.WriteLine(str));
+  }
 
 ```
 
 Now
 ```c#
+  using static System.Console;
+  ...
+  public void PrintLnAsync(String str) => Task.Factory.StartNew( ()=> WriteLine(str));
 ```
 
 
