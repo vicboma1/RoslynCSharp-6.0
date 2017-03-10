@@ -131,6 +131,31 @@ Now
   public void PrintLnAsync(String str) => Task.Factory.StartNew( ()=> WriteLine(str));
 ```
 
+## Extension methods
+Before 
+```c#
+  public static class NewFeautesRoslynExtension {
+    public static void PrintLnAsync(this NewFeautesRoslyn newFeautesRoslyn) {
+      return Task.Factory.StartNew(() => Console.WriteLine(newFeautesRoslyn));
+  }
+  
+  ...
+  
+  NewFeautesRoslyn newFeautesRoslyn = NewFeautesRoslyn.Create(5.0);
+  PrintLnAsync(newFeautesRoslyn);
+```
+
+Now
+```c#
+  public static class NewFeautesRoslynExtension {
+    public static void PrintLnAsync(this NewFeautesRoslyn newFeautesRoslyn) => Task.Factory.StartNew(() => WriteLine(newFeautesRoslyn));
+  }
+  
+  ...
+  
+  NewFeautesRoslyn newFeautesRoslyn = NewFeautesRoslyn.Create(6.0);
+  newFeautesRoslyn.PrintLnAsync();
+```
 
 ## Null-conditional operators
 Before 
