@@ -366,12 +366,18 @@ public static void Main(string[] args)
 ```
 
 ## Improved overload resolution
-Before 
+Now 
 ```c#
+using System;
 
+class Test
+{
+    static void Foo(Func<Func<long>> func) {}
+    static void Foo(Func<Func<int>> func) {}
+
+    static void Main()
+    {
+        Foo(() => () => 7);
+    }
+}
 ```
-
-Now
-```c#
-```
-
