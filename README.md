@@ -92,14 +92,14 @@ Now
 ## Expression-bodied function members
 Before 
 ```c#
-  public static NewFeautesRoslyn Create() {
+  public static INewFeautesRoslyn Create() {
     return new NewFeautesRoslyn();
   }
 ```
 
 Now
 ```c#
-  public static NewFeautesRoslyn Create() => new NewFeautesRoslyn();
+  public static INewFeautesRoslyn Create() => new NewFeautesRoslyn();
 ```
 
 
@@ -142,7 +142,7 @@ Before
   
   ...
   
-  NewFeautesRoslyn newFeautesRoslyn = NewFeautesRoslyn.Create(5.0);
+  INewFeautesRoslyn newFeautesRoslyn = NewFeautesRoslyn.Create(5.0);
   PrintLnAsync(newFeautesRoslyn);
 ```
 
@@ -244,21 +244,52 @@ Now
 ## Exception filters
 Before 
 ```c#
-
+  public void Exception() {
+    var other = "other";
+    var exit = "exit";
+    try { throw new SystemException($"{exit}!!!"); }
+    catch (SystemException e){
+      if(e.Message.Contains(exit)
+        WriteLine(nameof(Environment.Exit));
+    }
+   finally
+   {
+     Environment.Exit(-1);
+   }
+ }
 ```
 
 Now
 ```c#
+  public void Exception() {
+    var exit = "exit";
+    try { throw new SystemException($"{exit}!!!"); }
+    catch (SystemException e) when (e.Message.Contains(nameof(exit))) {
+      WriteLine(nameof(Environment.Exit));
+    }
+    finally
+    {
+      Environment.Exit(-1);
+    }
+  }
 ```
 
 ## Await in catch and finally blocks
-Before 
-```c#
-
-```
-
 Now
 ```c#
+  public async Task Exception() {
+    var exit = "exit";
+    try { throw new SystemException($"{exit}!!!"); }
+    catch (SystemException e) when (e.Message.Contains(nameof(exit))) {
+      await PrintLnConsoleAsync($"{nameof(Environment.Exit)}");
+    }
+    finally {
+      await ExitAsync();
+    }
+  }
+  
+  public async Task PrintLnConsoleAsync(String str) => await Task.Factory.StartNew(() => WriteLine($"Console: {str}"));
+  public async Task ExitAsync() => await Task.Factory.StartNew(() => { Environment.Exit(-1); });
 ```
 
 ## Extension Add methods in collection initializers
