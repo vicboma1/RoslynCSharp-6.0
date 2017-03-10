@@ -219,11 +219,26 @@ Now
 ## Index initializers
 Before 
 ```c#
-
+public static IDictionary<String, String> GetFeatures() {
+  return new Dictionary<String,String> {
+    { "0", "Initializers for auto-properties"},
+    { "1", "Getter-only auto-properties"},
+    { "2", "Expression-bodied function members"},
+    { "3", "Expression bodies on property-lik -  function members"},
+    { "4", "Using static"}
+   };
+  }
 ```
 
 Now
 ```c#
+  public static IDictionary<String, String> GetFeatures() => new Dictionary<String,String> {
+    ["0"] = "Initializers for auto-properties",
+    ["1"] = "Getter-only auto-properties",
+    ["2"] = "Expression-bodied function members",
+    ["3"] = "Expression bodies on property-lik -  function members",
+    ["4"] = "Using static"
+  };
 ```
 
 ## Exception filters
