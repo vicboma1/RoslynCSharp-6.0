@@ -32,20 +32,20 @@ https://go.microsoft.com/fwlink/?linkid=843444
 
 
 ###Indexes for new features for Roslyn compiler
-* [Initializers for auto-properties]()
-* [Getter-only auto-properties]()
+* [Initializers for auto-properties](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#)
+* [Getter-only auto-properties](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#)
 * [Expression-bodied function members](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#expression-bodied-function-members)
-* [Expression bodies on property-like function members]()
-* [Using static]()
-* [Null-conditional operators]()
-* [Null-coalescing operators]()
-* [String interpolation]()
-* [nameof expressions]()
-* [Index initializers]()
-* [Exception filters]()
-* [Await in catch and finally blocks]()
-* [Extension Add methods in collection initializers]()
-* [Improved overload resolution]()
+* [Expression bodies on property-like function members](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#)
+* [Using static](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#)
+* [Null-conditional operators](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#)
+* [Null-coalescing operators](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#)
+* [String interpolation](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#)
+* [nameof expressions](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#)
+* [Index initializers](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#)
+* [Exception filters](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#)
+* [Await in catch and finally blocks](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#)
+* [Extension Add methods in collection initializers](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#)
+* [Improved overload resolution](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#)
 
 
 ## Initializers for auto-properties
