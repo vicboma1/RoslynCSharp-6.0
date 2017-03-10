@@ -38,6 +38,7 @@ https://go.microsoft.com/fwlink/?linkid=843444
 * [Expression bodies on property-like function members]()
 * [Using static]()
 * [Null-conditional operators]()
+* [Null-coalescing operators]()
 * [String interpolation]()
 * [nameof expressions]()
 * [Index initializers]()
@@ -160,13 +161,31 @@ Now
 ## Null-conditional operators
 Before 
 ```c#
-
+		public int CountFriends() {
+    if(friends.Count == null) throw new ArgumentNullException(nameof(x));
+      return friends.Count;
+  }
 ```
 
 Now
 ```c#
+		public int? CountFriends() => friends?.Count;
 ```
 
+## Null-coalescing operators
+Before 
+```c#
+  public int CountFriends() {
+    if(friends.Count == null) 
+      return 0;
+    return friends.Count;
+  }
+```
+
+Now
+```c#
+  public int? CountFriends() => friends?.Count ?? 0;
+```
 
 ## String interpolation
 Before 
