@@ -46,3 +46,16 @@ https://go.microsoft.com/fwlink/?linkid=843444
 * [Await in catch and finally blocks]()
 * [Extension Add methods in collection initializers]()
 * [Improved overload resolution]()
+
+## Expression-bodied function members
+Before 
+```c#
+public static NewFeautesRoslyn Create() {
+ return new NewFeautesRoslyn();
+}
+```
+
+Now
+```c#
+public static NewFeautesRoslyn Create() => new NewFeautesRoslyn();
+```
