@@ -34,8 +34,7 @@ https://go.microsoft.com/fwlink/?linkid=843444
 ###Indexes for new features for Roslyn compiler
 * [Initializers for auto-properties]()
 * [Getter-only auto-properties]()
-* [Getter-only auto-properties]()
-* [Expression-bodied function members]()
+* [Expression-bodied function members](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#expression-bodied-function-members)
 * [Expression bodies on property-like function members]()
 * [Using static]()
 * [Null-conditional operators]()
@@ -47,15 +46,165 @@ https://go.microsoft.com/fwlink/?linkid=843444
 * [Extension Add methods in collection initializers]()
 * [Improved overload resolution]()
 
-## Expression-bodied function members
+
+## Initializers for auto-properties
 Before 
 ```c#
-public static NewFeautesRoslyn Create() {
- return new NewFeautesRoslyn();
-}
+  public String Name { get; set; }
+  public String Last { get; set; }
+  
+  public Constructor() {
+    this.Name = "Victor";
+    this.Last = "Bolinches";
+  }
+  
 ```
 
 Now
 ```c#
-public static NewFeautesRoslyn Create() => new NewFeautesRoslyn();
+  public String Name { get; set; } = "Victor";
+  public String Last { get; set; } = "Bolinches";
 ```
+
+
+## Getter-only auto-properties (setter inline inside the class)
+Before 
+```c#
+  public Double Version { get; private set; } 
+  
+  public Constructor() {
+     this.Version = 6.0;
+  }
+```
+
+Now
+```c#
+  public Double Version { get; } 
+  
+  public Constructor() {
+    this.Version = 6.0;
+  }
+
+```
+
+
+## Expression-bodied function members
+Before 
+```c#
+  public static NewFeautesRoslyn Create() {
+    return new NewFeautesRoslyn();
+  }
+```
+
+Now
+```c#
+  public static NewFeautesRoslyn Create() => new NewFeautesRoslyn();
+```
+
+
+
+## Expression bodies on property-like function members
+Before 
+```c#
+
+```
+
+Now
+```c#
+```
+
+
+## Using static
+Before 
+```c#
+
+```
+
+Now
+```c#
+```
+
+
+## Null-conditional operators
+Before 
+```c#
+
+```
+
+Now
+```c#
+```
+
+
+## String interpolation
+Before 
+```c#
+
+```
+
+Now
+```c#
+```
+
+
+## nameof expressions
+Before 
+```c#
+
+```
+
+Now
+```c#
+```
+
+
+## Index initializers
+Before 
+```c#
+
+```
+
+Now
+```c#
+```
+
+## Exception filters
+Before 
+```c#
+
+```
+
+Now
+```c#
+```
+
+## Await in catch and finally blocks
+Before 
+```c#
+
+```
+
+Now
+```c#
+```
+
+## Extension Add methods in collection initializers
+Before 
+```c#
+
+```
+
+Now
+```c#
+```
+
+## Improved overload resolution
+Before 
+```c#
+
+```
+
+Now
+```c#
+```
+
