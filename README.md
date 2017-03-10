@@ -171,11 +171,14 @@ Now
 ## String interpolation
 Before 
 ```c#
-
+  public override string ToString() {
+    return string.Format("[NewFeautesRoslyn: Name={0}, Last={1}, Alias={2}, Version={3}]", Name, Last, Alias, Version);
+  }
 ```
 
 Now
 ```c#
+  public override string ToString() => $"[NewFeautesRoslyn: Name={Name}, Last={Last}, Alias={Alias}, Version={Version}]";
 ```
 
 
