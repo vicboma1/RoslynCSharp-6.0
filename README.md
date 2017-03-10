@@ -32,20 +32,20 @@ https://go.microsoft.com/fwlink/?linkid=843444
 
 
 ###Indexes for new features for Roslyn compiler
-* [Initializers for auto-properties](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#)
-* [Getter-only auto-properties](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#)
+* [Initializers for auto-properties](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#initializers-for-auto-properties)
+* [Getter-only auto-properties](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#getter-only-auto-properties-setter-inline-inside-the-class)
 * [Expression-bodied function members](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#expression-bodied-function-members)
-* [Expression bodies on property-like function members](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#)
-* [Using static](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#)
-* [Null-conditional operators](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#)
-* [Null-coalescing operators](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#)
-* [String interpolation](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#)
-* [nameof expressions](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#)
-* [Index initializers](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#)
-* [Exception filters](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#)
-* [Await in catch and finally blocks](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#)
-* [Extension Add methods in collection initializers](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#)
-* [Improved overload resolution](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#)
+* [Expression bodies on property-like function members](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#expression-bodies-on-property-like-function-members)
+* [Using static](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#using-static)
+* [Null-conditional operators](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#null-conditional-operators)
+* [Null-coalescing operators](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#null-coalescing-operators)
+* [String interpolation](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#string-interpolation)
+* [nameof expressions](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#nameof-expressions)
+* [Index initializers](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#index-initializers)
+* [Exception filters](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#exception-filters)
+* [Await in catch and finally blocks](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#await-in-catch-and-finally-blocks)
+* [Extension Add methods in collection initializers](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#extension-add-methods-in-collection-initializers)
+* [Improved overload resolution](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#improved-overload-resolution)
 
 
 ## Initializers for auto-properties
