@@ -5,12 +5,12 @@ using System.Threading.Tasks;
 using static System.Console;
 using System.Linq;
 using System.Text;
+using NewFeaturesRoslyn.Api;
 
-namespace newFeaturesRoslyn
+namespace NewFeaturesRoslyn.Src
 {
 	public class NewFeautesRoslyn : INewFeautesRoslyn
 	{
-		private string other = "other";
 		private IDictionary<String, String> features;
 
 		//Getter-only auto-properties
@@ -36,7 +36,7 @@ namespace newFeaturesRoslyn
 		//String interpolation
 		//nameof expressions
 		public override string ToString() =>
-		$"[{nameof(NewFeautesRoslyn)}: {nameof(Version)}={Version} {nameof(Count)}={this.Count()} \n{nameof(ToString)}={ToListString()}]";
+				$"[{nameof(NewFeautesRoslyn)}: {nameof(Version)}={Version} {nameof(Count)}={this.Count()} \n{nameof(ToString)}={ToListString()}]";
 
 		public async Task PrintLnAsync() =>
 			   await Task.Factory.StartNew(() => WriteLine($"Async: {this}"));
@@ -58,7 +58,7 @@ namespace newFeaturesRoslyn
 			{
 				await PrintLnConsoleAsync($"{nameof(Environment.Exit)}");
 			}
-			catch (Exception e) when (e.Message.Contains(nameof(other)))
+			catch (Exception e)
 			{
 				PrintLn();
 			}

@@ -1,18 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using NewFeaturesRoslyn.Src;
+using NewFeatureCollection.Src;
 
 namespace newFeaturesRoslyn
 {
 	class MainClass
 	{
-		//Initializers for auto-properties
-		public String Name { get; set; } = "Victor";
-		public String Last { get; set; } = "Bolinches";
-
-		//Expression bodies on method-like members
-		public String Alias => "vicboma1";
-
 		public static void Main(string[] args)
 		{
 			var newFeaturesCollection = new NewFeaturesCollection {

@@ -34,12 +34,18 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="NewFeautesRoslyn.cs" />
-    <Compile Include="INewFeautesRoslyn.cs" />
-    <Compile Include="NewFeaturesCollection.cs" />
+    <Compile Include="CSharp6.0\NewFeatures\Api\INewFeautesRoslyn.cs" />
+    <Compile Include="CSharp6.0\NewFeatures\Src\NewFeautesRoslyn.cs" />
+    <Compile Include="CSharp6.0\NewFeaturesCollection\Api\INewFeaturesCollection.cs" />
+    <Compile Include="CSharp6.0\NewFeaturesCollection\Src\NewFeaturesCollection.cs" />
+    <Compile Include="CSharp6.0\Poco\Poco.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="CSharp6.0\" />
+    <Folder Include="CSharp6.0\NewFeatures\" />
+    <Folder Include="CSharp6.0\NewFeaturesCollection\" />
+    <Folder Include="CSharp6.0\Poco\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\visualStudio2017Mac.gif" />

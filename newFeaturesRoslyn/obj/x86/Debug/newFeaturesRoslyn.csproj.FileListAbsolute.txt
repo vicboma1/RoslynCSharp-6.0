@@ -1,4 +1,0 @@
-/Users/vicboma/Projects/newFeaturesRoslyn/newFeaturesRoslyn/bin/Debug/newFeaturesRoslyn.exe
-/Users/vicboma/Projects/newFeaturesRoslyn/newFeaturesRoslyn/bin/Debug/newFeaturesRoslyn.exe.mdb
-/Users/vicboma/Projects/newFeaturesRoslyn/newFeaturesRoslyn/obj/x86/Debug/newFeaturesRoslyn.exe
-/Users/vicboma/Projects/newFeaturesRoslyn/newFeaturesRoslyn/obj/x86/Debug/newFeaturesRoslyn.exe.mdb

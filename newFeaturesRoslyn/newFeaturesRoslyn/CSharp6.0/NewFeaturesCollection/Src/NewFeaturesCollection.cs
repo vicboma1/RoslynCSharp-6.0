@@ -2,11 +2,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using NewFeatureCollection.Api;
+using NewFeaturesRoslyn.Api;
 
-namespace newFeaturesRoslyn
+namespace NewFeatureCollection.Src
 {
 
-	public class NewFeaturesCollection : IEnumerable<INewFeautesRoslyn>
+	public class NewFeaturesCollection : INewFeaturesCollection<INewFeautesRoslyn>
 	{
 		//Initializers for auto-properties
 		private IList<INewFeautesRoslyn> features { get; } = new List<INewFeautesRoslyn>();
@@ -31,3 +33,4 @@ namespace newFeaturesRoslyn
 			newFeaturesCollection.Put(newFeautesRoslyn);
 	}
 }
+

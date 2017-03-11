@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using static System.Console;
 
-namespace newFeaturesRoslyn
+namespace NewFeaturesRoslyn.Api
 {
 	public interface INewFeautesRoslyn
 	{
