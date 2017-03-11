@@ -28,6 +28,7 @@ https://go.microsoft.com/fwlink/?linkid=843444
 
 5 - Open Visual Studio 2017 for Mac 
 
+![](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/newFeaturesRoslyn/Resources/visualStudio2017Mac.gif)
 
 
 
