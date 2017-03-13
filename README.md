@@ -28,7 +28,7 @@ https://go.microsoft.com/fwlink/?linkid=843444
 
 5 - Open Visual Studio 2017 for Mac 
 
-![](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/newFeaturesRoslyn/Resources/visualStudio2017Mac.gif)
+![](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/newFeaturesRoslyn/newFeaturesRoslyn/Resources/visualStudio2017Mac.gif)
 
 
 
@@ -276,7 +276,7 @@ Now
 ```
 
 ## Await in catch and finally blocks
-Now
+New
 ```c#
   public async Task Exception() {
     var exit = "exit";
@@ -294,7 +294,7 @@ Now
 ```
 
 ## Extension Add methods in collection initializers
-Now
+New
 ```c#
 namespace newFeaturesRoslyn
 {
@@ -367,7 +367,7 @@ public static void Main(string[] args)
 ```
 
 ## Improved overload resolution
-Now 
+New 
 ```c#
 using System;
 
@@ -382,3 +382,7 @@ class Test
     }
 }
 ```
+
+@Autor: Victor Bolinches
+
+@Alias: vicboma1
