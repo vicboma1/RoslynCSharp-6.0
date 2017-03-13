@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using NewFeaturesRoslyn.Src;
 using NewFeatureCollection.Src;
+using static Poco.Poco;
 
 namespace newFeaturesRoslyn
 {
@@ -10,6 +11,8 @@ namespace newFeaturesRoslyn
 	{
 		public static void Main(string[] args)
 		{
+			var poco = Create();
+
 			var newFeaturesCollection = new NewFeaturesCollection {
 				NewFeautesRoslyn.Create(6.0,GetFeatures()),
 				NewFeautesRoslyn.Create(6.0,GetFeatures1_6()),

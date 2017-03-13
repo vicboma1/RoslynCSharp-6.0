@@ -14,8 +14,14 @@ namespace Poco
 		//Extension Add methods in collection initializers
 		public static Poco Create() => new Poco();
 
+		//Improved overload resolution
+		void Foo(Func<Func<Int64>> func) { }
+		void Foo(Func<Func<Int32>> func) { }
+		void Foo(Func<Func<Int16>> func) { }
+
 		Poco()
 		{
+			Foo(() => () => 1234);
 		}
 	}
 }
