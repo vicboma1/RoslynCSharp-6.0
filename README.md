@@ -32,7 +32,7 @@ https://go.microsoft.com/fwlink/?linkid=843444
 
 
 
-###Indexes for new features for Roslyn compiler
+### Indexes for new features for Roslyn compiler
 * [Initializers for auto-properties](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#initializers-for-auto-properties)
 * [Getter-only auto-properties](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#getter-only-auto-properties-setter-inline-inside-the-class)
 * [Expression-bodied function members](https://github.com/vicboma1/RoslynCSharp-6.0/blob/master/README.md#expression-bodied-function-members)
